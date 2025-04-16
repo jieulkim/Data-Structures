@@ -103,8 +103,8 @@ int main()
 int hasGreatGrandchild(BTNode *node)
 {
 	/* add your code here */
-    if (node->left == NULL || node->right == NULL) {
-        return 1;
+    if (node == NULL) {
+        return -1;
     }
 
     int left = hasGreatGrandchild(node->left) + 1;
